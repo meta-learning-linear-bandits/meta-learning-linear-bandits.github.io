@@ -1,1 +1,1 @@
-# noise-aware-nerf
+# Metalearning Linear Bandits by Prior Updates
