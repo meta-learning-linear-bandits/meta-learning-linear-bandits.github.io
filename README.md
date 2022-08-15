@@ -1,1 +1,1 @@
-# meta-learning-linear-bandits.github.io
+# noise-aware-nerf

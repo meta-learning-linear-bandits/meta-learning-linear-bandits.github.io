@@ -1,52 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
+    <!--    https://www.w3schools.com/tags/tag_meta.asp-->
+    <meta charset="utf-8">
+    <meta name="description" content="Metalearning Linear Bandits by Prior Update">
+    <meta name="keywords" content="Metalearning, Linear Bandits, Thompson Sampling, AISTATS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metalearning Linear Bandits by Prior Update</title>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <!--    <link rel="shortcut icon" href="images/lab_icon.png" type="image/png"/>-->
 </head>
-<body class="w3-light-grey">
+<body>
 
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Metalearning Linear Bandits by Prior Update</h1>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">
+                            <a href="https://www.linkedin.com/in/amit-peleg-4bb506212/">Amit Peleg</a><sup>1</sup>,
+                        </span>
+                        <span class="author-block">
+                          Naama Pearl<sup>2</sup>,
+                        </span>
+                        <span class="author-block">
+                          <a href="https://ronmeir.net.technion.ac.il/">Ron Meir</a><sup>1</sup>
+                        </span>
+                    </div>
+                    <div class="is-size-5 publication-authors">
+                        <span class="institution-block">
+                          <span class="instit"><sup>1</sup>Viterbi Faculty of ECE, Technion
+                            <br>Israel
+                          </span>
+                          <span class="instit"><sup>2</sup>University of Haifa
+                              <br>Israel
+                          </span>
+                        </span>
+                    </div>
+                    <h1 style="font-size:24px;font-weight:bold">AISTATS 2022</h1>
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <span class="link-block">
+                            <a href="https://proceedings.mlr.press/v151/peleg22a"
+                               class="external-link button is-normal is-rounded is-dark">
+                              <span class="icon">
+                                  <i class="far fa-file-alt is-size-4"></i>g
+                              </span>
+                              <span>Paper</span>
+                            </a>
+                            </span>
+                            <span class="link-block">
+                              <a href="https://slideslive.com/38980494/metalearning-linear-bandits-by-prior-update?ref=search-presentations-metalearning+linear+bandits+by+prior+update"
+                                 class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="fas fa-video"></i>
+                                </span>
+                                <span>4 minutes Video</span>
+                              </a>
+                            </span>
+                            <span class="link-block">
+                              <a href="data/Poster.png"
+                                 class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="far fa-image"></i>
+                                </span>
+                                <span>Conference Poster</span>
+                              </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32"> 
-  <h1><b>Metalearning Linear Bandits by Prior Updates</b></h1>
-  <p>Amit Peleg, Naama Pearl, Ron Meir</p>
-  <p>
-</header>
+<!--abstract-->
+<section class="section">
+    <div class="container">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-two-thirds">
+                <h2 class="title is-2">Abstract</h2>
+                <div class="content has-text-justified is-italic">
+                    <p>
+                        Fully Bayesian approaches to sequential decision-making assume that problem parameters are
+                        generated from a known prior.
+                        In practice, such information is often lacking.
+                        This problem is exacerbated in setups with partial information, where a misspecified prior may
+                        lead to poor exploration and performance.
+                        In this work we prove, in the context of stochastic linear bandits and Gaussian priors,
+                        that as long as the prior is sufficiently close to the true prior,
+                        the performance of the applied algorithm is close to that of the algorithm that uses the true
+                        prior.
+                        Furthermore, we address the task of learning the prior through metalearning,
+                        where a learner updates her estimate of the prior across multiple task instances in order to
+                        improve performance on future tasks.
+                        We provide an algorithm and regret bounds, demonstrate its effectiveness in comparison to an
+                        algorithm that knows the correct prior,
+                        and support our theoretical results empirically. Our theoretical results hold for a broad class
+                        of algorithms,
+                        including Thompson Sampling and Information Directed Sampling.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Abstract. -->
+
+<!--abstract-->
+<section class="section">
+    <div class="container">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-two-thirds">
+                <img class="img-teaser" src="data/Thumbnail%20large.png">
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--/ Abstract. -->
 
 
+<section class="section" id="BibTeX">
+    <div class="container content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>
+            @inproceedings{peleg2022metalearning,
+              title={Metalearning linear bandits by prior update},
+              author={Peleg, Amit and Pearl, Naama and Meir, Ron},
+              booktitle={International Conference on Artificial Intelligence and Statistics},
+              pages={2885--2926},
+              year={2022},
+              organization={PMLR}
+            }
+</code></pre>
+    </div>
+</section>
 
-
-<!-- Grid -->
-
-<div class="w3-row">
-<div class="w3-col w3-padding-62">
-<h1>Abstract</h1>
-<p>Fully Bayesian approaches to sequential decision-making assume that problem parameters are generated from a known prior. In practice, such information is often lacking. This problem is exacerbated in setups with partial information, where a misspecified prior may lead to poor exploration and performance. In this work we prove, in the context of stochastic linear bandits and Gaussian priors, that as long as the prior is sufficiently close to the true prior, the performance of the applied algorithm is close to that of the algorithm that uses the true prior. Furthermore, we address the task of learning the prior through metalearning, where a learner updates her estimate of the prior across multiple task instances in order to improve performance on future tasks. We provide an algorithm and regret bounds, demonstrate its effectiveness in comparison to an algorithm that knows the correct prior, and support our theoretical results empirically. Our theoretical results hold for a broad class of algorithms, including Thompson Sampling and Information Directed Sampling.
-</div>
-</p>
-</div class="w3-row">
-
-<div class="w3-row">
-
-<!-- END GRID -->
-</div><br>
-
-<!-- END w3-content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="content has-text-centered">
+                The website interface is adapted from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>
+                <br>
+                We thank Nir Zagdanski for helping with the website.
+            </div>
+        </div>
+    </div>
 </footer>
 
 </body>
